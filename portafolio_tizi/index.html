@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio profesional responsive Tiziano</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* Contenedor principal que contiene el header */
+        header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 20px;
+        }
+    
+        /* Estilo para el contenedor del selector */
+        #language-select-container {
+          padding: 5px;
+          background-color: transparent;
+          border: 2px solid #ccc;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+    
+        /* Contenedor de las banderas */
+        .flags {
+          display: flex;
+          justify-content: space-between;
+          width: 80px; /* Ancho del selector */
+        }
+    
+        .flags img {
+          width: 30px;
+          height: auto;
+          cursor: pointer;
+          border-radius: 3px;
+        }
+    
+        .flags img:hover {
+          transform: scale(1.1);
+        }
+    
+        /* Estilo de los elementos (TiziBRD, Inicio) */
+        .logo, .inicio {
+          font-size: 24px;
+          font-weight: bold;
+        }
+      </style>
+</head>
+<link rel="icon" type="image/png" href="img/VIRUS.png">
+<body>
+    
+    <header class="header">
+        <a href="" class="logo">TiziBRD</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+        
+        <div id="language-select-container">
+            <!-- Selector con banderas -->
+            <div class="flags">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/1920px-Flag_of_Spain.svg.png" alt="Español" id="spanish" onclick="changeLanguage('es')">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1920px-Flag_of_the_United_States.svg.png" alt="English" id="english" onclick="changeLanguage('en')">
+            </div>
+          </div>
+
+        <nav class="navbar">
+            <a href="#home" data-value="inicio">Inicio</a>
+            <a href="#videos" data-value="videos">Videos</a>
+            <a href="#servicios" data-value="servicios">Servicios</a> 
+            <a href="#about" data-value="sobre-mi">Sobre mí</a>
+            <a href="#habilidades" data-value="habilidades">Habilidades</a>
+            <a href="#clientes" data-value="clientes">Clientes</a>
+            <a href="#contact" data-value="contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3 data-value="hola">Hola, este soy yo</h3>
+            <h1>Tiziano Barverdi</h1>
+            <h3 data-value="soy">Y soy <span id="typing-text">Editor de video.</span></h3> <!-- Aquí va el texto animado -->
+            <p data-value="descripcion">Especializado en crear contenido visualmente <br> atractivo que conecta con la audiencia.</p>
+            <div class="social-media">
+                <a href="https://x.com/TBarverdi" data-value="twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="https://discord.com/users/Tizi%235185" target="_blank" data-value="discord">
+                    <i class='bx bxl-discord-alt'></i>
+                </a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="img/tiziano.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="videos" id="videos">
+        <h2 class="heading" data-value="ultimos-videos">Útimos <span>Videos</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <a href="https://www.youtube.com/watch?v=ajr7FnnGG3c" target="_blank">
+                    <img src="https://img.youtube.com/vi/ajr7FnnGG3c/0.jpg" alt="Video 1" data-value="video-1">
+                </a>
+                <div class="info">
+                    <a href="https://www.youtube.com/watch?v=ajr7FnnGG3c" target="_blank"></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <a href="https://www.youtube.com/watch?v=iwgu9WISwXI" target="_blank">
+                    <img src="https://img.youtube.com/vi/iwgu9WISwXI/0.jpg" alt="Video 2">
+                </a>
+                <div class="info">
+                    <a href="https://www.youtube.com/watch?v=iwgu9WISwXI" target="_blank"></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <a href="https://support.google.com/youtube?p=ppp&nohelpkit=1" target="_blank">
+                    <img src="https://img.youtube.com/vi/RxKVWs_qYBk/0.jpg" alt="Video 3">
+                </a>
+                <div class="info">
+                    <a href="https://support.google.com/youtube?p=ppp&nohelpkit=1" target="_blank"></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <a href="https://www.youtube.com/watch?v=RxKVWs_qYBk" target="_blank">
+                    <img src="https://img.youtube.com/vi/RxKVWs_qYBk/0.jpg" alt="Video 4">
+                </a>
+                <div class="info">
+                    <a href="https://www.youtube.com/watch?v=RxKVWs_qYBk" target="_blank"></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <a href="https://www.youtube.com/watch?v=hTPwFngrs5A" target="_blank">
+                    <img src="https://img.youtube.com/vi/hTPwFngrs5A/0.jpg" alt="Video 5">
+                </a>
+                <div class="info">
+                    <a href="https://www.youtube.com/watch?v=hTPwFngrs5A" target="_blank"></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <a href="https://www.youtube.com/watch?v=D08PjHoFnSY" target="_blank">
+                    <img src="https://img.youtube.com/vi/D08PjHoFnSY/0.jpg" alt="Video 6">
+                </a>
+                <div class="info">
+                    <a href="https://www.youtube.com/watch?v=D08PjHoFnSY" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <section class="shorts" id="shorts">
+        <h2 data-value="shorts">Shorts</h2>
+
+        <div class="shorts-container">
+            <div class="shorts-card">
+                <div class="shorts-title">Short 1</div>
+                <div class="shorts-description" style="padding-left: 30px;">Un vistazo rápido a la vida y los crímenes de Ted Bundy, explorando su psicología y cómo logró evadir la captura durante años.</div>
+                <iframe src="https://drive.google.com/file/d/1WdY_l-a0CkQ0KOUTIQp_vVg8K_tU1LC8/preview" width="100%" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <a href="https://drive.google.com/file/d/1WdY_l-a0CkQ0KOUTIQp_vVg8K_tU1LC8/view?usp=sharing" class="shorts-button" target="_blank">Ver Más</a>
+            </div>
+            
+            <div class="shorts-card">
+                <div class="shorts-title">Short 2</div>
+                <div class="shorts-description" style="padding-left: 30px;">Un vistazo a las estrategias empresariales más efectivas y cómo ayudan a las empresas a destacar en mercados competitivos.</div>
+                <iframe src="https://drive.google.com/file/d/1nx06aP5_l-0lUwL70vlh9UwjrUJQj9Pm/preview" width="100%" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <a href="https://drive.google.com/file/d/1nx06aP5_l-0lUwL70vlh9UwjrUJQj9Pm/view?usp=sharing" class="shorts-button" target="_blank">Ver Más</a>
+            </div>
+            
+            <div class="shorts-card">
+                <div class="shorts-title">Short 3</div>
+                <div class="shorts-description" style="padding-left: 30px;">Un video inspirador basado en "El Club de la Pelea", que motiva a romper con las normas sociales impuestas por las personas.</div>
+                <iframe src="https://drive.google.com/file/d/18FGwOkAgaJr3tFmqPmA3KE6IJ-fyn5pb/preview" width="100%" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <a href="https://drive.google.com/file/d/18FGwOkAgaJr3tFmqPmA3KE6IJ-fyn5pb/view?usp=sharing" class="shorts-button" target="_blank">Ver Más</a>
+            </div>
+        </div>
+    </section>
+    <div id="overlay" class="overlay"></div>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/tizi.NOpintada.png" alt="">
+        </div>
+    
+        <div class="about-content">
+            <h2 class="heading" data-value="sobre-mi">Sobre <span>Mí</span></h2>
+            <h3 data-value="editor-video">Editor de Video</h3>
+            <p id="animated-text" data-value="descripcion-sobre-mi">
+                Soy un editor de video apasionado por contar historias visuales. Con varios años de experiencia en la edición de contenido para plataformas digitales, me especializo en la creación de vídeos dinámicos y de alta calidad que capturan la atención de la audiencia.
+            </p>
+        </div>
+    </section>
+
+    <section class="habilidades" id="habilidades">
+        <h2 class="heading" data-value="mis-habilidades">Mis <span>Habilidades</span></h2>
+        <div class="skills-container">
+            <div class="skill-box">
+                <i class='bx bxs-cog'></i>
+                <h3 data-value="edicion-video">Edición de Video</h3>
+                <p>Domino las herramientas más avanzadas de edición de video, como Adobe Premiere Pro, Final Cut Pro, y DaVinci Resolve.</p>
+            </div>
+    
+            <div class="skill-box">
+                <i class='bx bxs-color'></i>
+                <h3 data-value="correccion-color">Corrección de Color</h3>
+                <p>Me especializo en la corrección y gradación de color para darle a cada video la atmósfera perfecta.</p>
+            </div>
+    
+            <div class="skill-box">
+                <i class='bx bxs-film'></i>
+                <h3 data-value="efectos-visuales">Efectos Visuales</h3>
+                <p>Incorporo efectos visuales dinámicos y transiciones profesionales para mejorar la experiencia visual del espectador.</p>
+            </div>
+    
+            <div class="skill-box">
+                <i class='bx bxs-microphone'></i>
+                <h3 data-value="edicion-audio">Edición de Audio</h3>
+                <p>Con un enfoque detallado en el audio, realizo la sincronización perfecta de sonido y música.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contratarme">
+        <h2 class="heading" data-value="porque-contratarme">¿Por qué <span>contratarme?</span></h2>
+        <div class="contratarme-contenedor">
+            <div class="contratarme-item">
+                <i class="fas fa-video"></i> <!-- Ícono de video -->
+                <h3 data-value="experiencia-edicion">Experiencia en Edición de Video</h3>
+                <p>Más de 3 años editando videos para plataformas como YouTube.</p>
+            </div>
+            <div class="contratarme-item">
+                <i class="fas fa-image"></i> <!-- Ícono de imagen -->
+                <h3 data-value="impacto-visual">Impacto Visual Garantizado</h3>
+                <p>Me aseguro de que cada video tenga una presentación atractiva.</p>
+            </div>
+            <div class="contratarme-item">
+                <i class="fas fa-tachometer-alt"></i> <!-- Ícono de velocidad -->
+                <h3 data-value="optimizar-videos">Optimización de Videos</h3>
+                <p>Me encargo de optimizar los videos para una carga rápida.</p>
+            </div>
+            <div class="contratarme-item">
+                <i class="fas fa-paint-brush"></i> <!-- Ícono de pincel -->
+                <h3 data-value="creatividad-visual">Creatividad Visual</h3>
+                <p>Aporto ideas creativas y efectos visuales únicos.</p>
+            </div>
+            <div class="contratarme-item">
+                <i class="fas fa-shield-alt"></i> <!-- Ícono de escudo -->
+                <h3 data-value="calidad-profesional">Calidad Profesional</h3>
+                <p>Trabajo con herramientas profesionales como Adobe Premiere y After Effects.</p>
+            </div>
+            <div class="contratarme-item">
+                <i class="fas fa-comments"></i> <!-- Ícono de comentarios -->
+                <h3 data-value="comunicacion">Comunicación y Soporte</h3>
+                <p>Siempre disponible para escuchar tus necesidades y realizar mejoras según tus comentarios.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading" data-value="pene">Contacta<span>Me!</span></h2>
+    
+        <div class="social-icons">
+            <a href="https://discord.com/users/Tizi%235185" target="_blank" data-value="discord-contact">
+                <img src="img/discord.png" alt="Discord">
+            </a>
+            <a href="https://x.com/TBarverdi" target="_blank" data-value="twitter-contact">
+                <img src="img/twitter.png" alt="Twitter">
+            </a>
+            <a href="mailto:Tizianobarverdi@gmail.com" data-value="gmail-contact">
+                <img src="img/gmail.png" alt="Gmail">
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by TiziBRD | Todos Los Derechos Reservados</p>
+        </div>
+
+        <div class="footer-icon">
+            <a href="#home" data-value="contactame"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+
+    <script>
+        function changeLanguage(language) {
+          // Redirigir a la página correspondiente según el idioma seleccionado
+          if (language === "en") {
+            window.location.href = "indexingles.html";  // Redirige a la página en inglés
+          } else {
+            window.location.href = "index.html";  // Redirige a la página en español
+          }
+        }
+      </script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
